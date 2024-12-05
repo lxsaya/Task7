@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Задание</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+        
+    <body>
+        <h1>Калькулятор стоимости заказа</h1>
+
+
+        <div id="result"></div>
+            <form>
+                <select name="select1">
+                    <option value="v1">Кот Шотландской породы(30000 руб)</option>
+                    <option value="v2">Кот Британской породы(50000 руб)</option>
+                    <option value="v3">Кот Сибирской породы(40000 руб)</option>
+                </select>
+                <button id="button1" onclick="return click1();">OK</button>
+            </form>
+
+            <div id="result2"></div>
+            <form id="calculator">
+                <label for="quantity">Количество:</label>
+                <input type="number" id="quantity" value="1" min="1">
+        
+                <fieldset>
+                    <legend>Тип услуги:</legend>
+                    <label><input type="radio" name="serviceType" value="type1" checked> Тип 1</label>
+                    <label><input type="radio" name="serviceType" value="type2"> Тип 2</label>
+                    <label><input type="radio" name="serviceType" value="type3"> Тип 3</label>
+                </fieldset>
+    
+            <div id="optionsContainer" style="display: none;">
+                <label for="options"></label>
+                <select id="options">
+                    <option value="">Выберите опцию</option>
+                    <option value="option1">Опция 1</option>
+                    <option value="option2">Опция 2</option>
+                </select>
+            </div>
+    
+            <div id="checkboxContainer" style="display: none;">
+                <label><input type="checkbox" id="property"> Свойство товара</label>
+            </div>
+    
+            <h2>Итоговая стоимость: <span id="totalCost">0</span> руб.</h2>
+        </form>
+        <!-- Подвал сайта -->
+        <footer>
+            <p>&copy; Хохлова Елизавета</p>
+        </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="JS.js"></script>
+
+</body>
+
